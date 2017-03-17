@@ -20,3 +20,18 @@ Route::get('pengguna/{pengguna}', function ($pengguna) {
 Route::get('framework/{mhs?}', function ($mhs="Muhammad Budi Saputra") {
     return "Hello $mhs Dari Pengguna";
 });
+Route::get('Jarvis','JarvisController@awal');
+Route::get('Jarvis/tambah','JarvisController@tambah');
+Route::get('dosen','dosenController@awal');
+Route::get('dosen/tambah','dosenController@tambah');
+Route::get('mahasiswa','mahasiswaController@awal');
+Route::get('mahasiswa/tambah','mahasiswaController@tambah');
+Route::get('matakuliah','matakuliahController@awal');
+Route::get('matakuliah/tambah','matakuliahController@tambah');
+Route::get('dosenmatakuliah','dosen_matakuliahController@awal');
+Route::get('dosenmatakuliah/tambah','dosen_matakuliahController@tambah');
+Route::get('jadwalmatakuliah','jadwal_matakuliahController@awal');
+Route::get('jadwalmatakuliah/tambah','jadwal_matakuliahController@tambah');
+Route::get('ruangan','ruanganController@awal');
+Route::get('ruangan/tambah','ruanganController@tambah');
+
