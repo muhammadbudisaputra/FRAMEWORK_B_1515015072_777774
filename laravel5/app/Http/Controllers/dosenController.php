@@ -9,6 +9,13 @@ use App\Dosen;
 
 class DosenController extends Controller
 {
+    public function dosen(){
+        $dosen = Dosen::find(1);
+        //dd($Mahasiswa);
+    echo "Nama:".$dosen->nama;
+    echo"<br>";
+    echo "Username:".$dosen->pengguna->username;
+    }
      public function awal(){
     	return "Hello dari DosenController";
     }
