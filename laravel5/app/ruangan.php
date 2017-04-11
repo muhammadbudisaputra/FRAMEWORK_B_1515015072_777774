@@ -6,10 +6,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class Ruangan extends Model
 {
-    protected $table = 'Ruangan'; //Mengambil data dari table Ruangan
-    public function Jadwal_mataKuliah() //Fungsi dengan nama Jadwal_matakuliah
-    {
-    	return $this->hasMany(JadwalMataKuliah::class,'Ruangan_id');//Memberikan nilai return dari fungsi hasMany dengan merelasikan Ruangan dengan banyak Jadwal_matakuliah dengan foreign key Ruangan_id
+    protected $table = 'ruangan'; // digunakan untuk mendeklarasikan tabel pengguna
+
+    //protected $fillable = ['title'];
+
+    //DISINI MODEL PENGGUNA BERELASI DENGAN MODEL JADWAL_MATAKULIAH
+
+     public function jadwal_matakuliah(){ // UNTUK MENENTUKAN HUBUNGANNYA, DIBUAT FUNGSI JADWAL_MATAKULIAH PADA MODEL PENGGUNA
+        
+     return $this->hasMany(JadwaL_matakuliah::class); // memberikan nilai return dari fungsi hasMany dengan merelasikan ruangan dengan banyak jadwal_matakuliah dengan foreign key ruangan_id
+    
     }
 }
-
