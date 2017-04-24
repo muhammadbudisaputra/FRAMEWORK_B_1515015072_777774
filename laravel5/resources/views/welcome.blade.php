@@ -3,7 +3,7 @@
     <head>
         <title>Laravel</title>
 
-        <link href="https://fonts.googleapis.com/css?family=(Times New Roman):100" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
         <style>
             html, body {
@@ -16,7 +16,7 @@
                 width: 100%;
                 display: table;
                 font-weight: 100;
-                font-family: 'Times New Roman';
+                font-family: 'Lato';
             }
 
             .container {
@@ -31,15 +31,15 @@
             }
 
             .title {
-                font-size: 86px;
+                font-size: 96px;
             }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Muhammad Budi Saputra</div>
+                <div class="title">STARK INDUSTRIES</div>
             </div>
         </div>
     </body>
-</html>
+</html> 
